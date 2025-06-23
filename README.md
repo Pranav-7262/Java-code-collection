@@ -12,8 +12,10 @@ Java-code-collection/
 ├── JDBC/                    # JDBC examples and database connectivity
 ├── out/                     # Build/output files (ignored by Git)
 └── README.md
+
 📌 Topics Covered
-✅ Data Structures (Stacks, Queues, Linked Lists, Trees, Graphs, etc.)
+
+✅ Data Structures (Stacks, Queues, Linked Lists, Trees, Hashing, etc.)
 
 ✅ Sorting and Searching Algorithms
 
@@ -22,3 +24,5 @@ Java-code-collection/
 ✅ Java OOP concepts and core syntax
 
 ✅ Practice Problems and Mini-Projects
+
+✅ Java Recursion Programs
