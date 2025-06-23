@@ -1,4 +1,4 @@
-# Java Code Collection
+# Java Code Collection 🔥
 
 A collection of Java programs covering key concepts such as Data Structures and Algorithms (DSA), JDBC (Java Database Connectivity), and core Java fundamentals. This repository serves as a personal learning and practice space, as well as a resource for beginners exploring Java.
 
