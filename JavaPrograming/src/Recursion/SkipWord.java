@@ -1,0 +1,30 @@
+package Recursion;
+
+public class SkipWord {
+    public static void main(String[] args) {
+//        System.out.println(skip("pranappleop"));
+        System.out.println(skipapp("pranappleop"));
+    }
+    static String skip(String up){
+        if (up.isEmpty()){
+            return "";
+        }
+        if (up.startsWith("apple")){
+            return skip(up.substring(5));
+        }
+        else {
+            return up.charAt(0)+skip(up.substring(1));
+        }
+    }
+    static String skipapp(String up){
+        if (up.isEmpty()){
+            return "";
+        }
+        if (up.startsWith("app") && !up.startsWith("apple")){
+            return skipapp(up.substring(3));
+        }
+        else {
+            return up.charAt(0)+skipapp(up.substring(1));
+        }
+    }
+}
