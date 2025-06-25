@@ -2,7 +2,7 @@ package Recursion;
 
 public class SumOfDigit {
     public static void main(String[] args) {
-        System.out.println(digit_sum(1234));
+        System.out.println(digit_sum(1234567));
     }
     static int digit_sum(int n){
         if (n == 0){
