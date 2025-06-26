@@ -2,7 +2,7 @@ package Recursion;
 
 public class Triangles {
     public static void main(String[] args) {
-        triangle2(5, 0);
+        triangle(5, 0);
     }
 
     static void triangle(int r, int c) {

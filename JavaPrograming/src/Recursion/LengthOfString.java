@@ -2,7 +2,7 @@ package Recursion;
 
 public class LengthOfString {
     public static void main(String[] args) {
-  String str = "abdnsk";
+        String str = "abdnsk";
         System.out.println(length(str));
 
     }
