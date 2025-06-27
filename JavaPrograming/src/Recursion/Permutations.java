@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Permutations {
     public static void main(String[] args) {
-//        permutations("","abc");
-        ArrayList<String> ans = permutationsList("", "ABC");
-        System.out.println(ans);
+        permutations("","abc");
+//        ArrayList<String> ans = permutationsList("", "ABC");
+//        System.out.println(ans);
 //        System.out.println(permutationsCount("","abc"));
     }
 
@@ -17,9 +17,9 @@ public class Permutations {
         }
         char ch = up.charAt(0);
         for (int i = 0; i <= p.length(); i++) {
-            String f = p.substring(0, i);
-            String s = p.substring(i, p.length());
-            permutations(f + ch + s, up.substring(1));
+          String first = p.substring(0,i);
+          String second = p.substring(i,p.length());
+          permutations(first+ch+second, up.substring(1));
         }
     }
 

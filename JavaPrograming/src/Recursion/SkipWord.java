@@ -2,8 +2,8 @@ package Recursion;
 
 public class SkipWord {
     public static void main(String[] args) {
-        System.out.println(skip("pranappleop"));
-//        System.out.println(skipapp("pranappleop"));
+//        System.out.println(skip("pranappleop"));
+        System.out.println(skipapp("pranapplcop"));
     }
     static String skip(String up){
         if (up.isEmpty()){
