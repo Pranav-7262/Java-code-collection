@@ -10,8 +10,6 @@ public class ReverseNum {
 //        sum = sum *10+ rem;
 //        reverse(n/10);
     static int reverse(int n) {
-
-
         int digits =(int) (Math.log10(n)) + 1;
         return helper(n , digits);
     }

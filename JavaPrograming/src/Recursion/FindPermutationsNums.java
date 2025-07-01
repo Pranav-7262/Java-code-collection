@@ -8,8 +8,6 @@ public class FindPermutationsNums {
      int []arr = {1,2,3};
         System.out.println(permute(arr));
     }
-
-
     public  static List<List<Integer>> permute(int[] nums) {
         return generatePermutations(new ArrayList<>(), nums);
     }

@@ -2,16 +2,16 @@ package Recursion;
 
 public class SkipWord {
     public static void main(String[] args) {
-//        System.out.println(skip("pranappleop"));
-        System.out.println(skipapp("pranapplcop"));
+        System.out.println(skip("pranapplecocop"));
+//        System.out.println(skipapp("pranapplecocop"));
     }
     static String skip(String up){
         if (up.isEmpty()){
             return "";
         }
         char ch = up.charAt(0);
-        if (up.startsWith("apple")){
-            return skip(up.substring(5));
+        if (up.startsWith("applecoco")){
+            return skip(up.substring(9));
         }
         else {
             return ch+skip(up.substring(1));
