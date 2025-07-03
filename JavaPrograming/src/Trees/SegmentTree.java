@@ -33,7 +33,7 @@ public class SegmentTree {
             leaf.value = arr[start];
             return leaf;
         }
-        //create a new node with index you are at :
+        //create a new node with index you are at  :
         Node node  = new Node(start , end);
         int mid = (start + end) / 2;
 
