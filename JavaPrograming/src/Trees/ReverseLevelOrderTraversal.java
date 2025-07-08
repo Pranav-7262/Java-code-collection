@@ -5,31 +5,35 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class LevelOrderTraversalBFS {
+public class ReverseLevelOrderTraversal {
     public static class TreeNode {
         int val;
-        TreeNode left;
-        TreeNode right;
+         TreeNode left;
+         TreeNode right;
 
+        public TreeNode() {
+
+        }
         public TreeNode(int val) {
             this.val = val;
         }
-        public TreeNode(int val, TreeNode left,TreeNode right) {
+        public TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
             this.right = right;
         }
     }
-    public static void main(String[] args) {
-       TreeNode root = new TreeNode(1);
-       root.left = new TreeNode(2);
-       root.right = new TreeNode(3);
-       root.right.left = new TreeNode(4);
-       root.right.right = new TreeNode(5);
 
-       System.out.println("Level Order traversal => " + levelOrder(root));
+    public static void main(String[] args) {
+         TreeNode root = new TreeNode(3);
+         root.left = new TreeNode(9);
+         root.right = new TreeNode(20);
+         root.right.left = new TreeNode(15);
+         root.right.right = new TreeNode(7);
+
+        System.out.println("Reverse order traversal =>"+levelOrderBottom(root));
     }
-    public static List<List<Integer>> levelOrder(TreeNode root) {
+    public  static List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) {
             return result;
@@ -44,17 +48,16 @@ public class LevelOrderTraversalBFS {
                 TreeNode currentNode = queue.poll();
                 currentlist.add(currentNode.val);
 
-              if (currentNode.left != null) {
-                  queue.offer(currentNode.left);
-              }
+                if (currentNode.left != null) {
+                    queue.offer(currentNode.left);
+                }
                 if (currentNode.right != null) {
                     queue.offer(currentNode.right);
                 }
             }
-            result.add(currentlist);
+            result.add(0 , currentlist);
         }
 
         return result;
     }
-//
 }
