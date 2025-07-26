@@ -39,7 +39,6 @@ public class DeleteLeavesWithTarget {
             System.out.println("Empty tree.");
             return;
         }
-
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
 
