@@ -2,7 +2,7 @@ package Strings;
 
 public class CountSubString {
     public static void main(String[] args) {
-    String str = "abcabc";
+    String str = "abs";
         System.out.println(countSubstring(str));
     }
     public static int countSubstring(String s) {
