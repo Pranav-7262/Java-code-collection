@@ -48,7 +48,5 @@ public class PathSumII {
         hasPathSum(root.right,result,list,remainsSum);
 
         list.remove(list.size()-1);
-
     }
-
 }
