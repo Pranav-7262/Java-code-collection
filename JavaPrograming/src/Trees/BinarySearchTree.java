@@ -132,15 +132,15 @@ public class BinarySearchTree {
 
     public static void main(String[] args) {
         BinarySearchTree bst = new BinarySearchTree();
-        int [] arr = {12,45,3,6,10};
+        int [] arr = {12,13,14,15,17};
         System.out.println("Numbers to add : ");
         System.out.println();
         for (int num : arr) {
             System.out.print("  "+num);
         }
         System.out.println();
-        bst.populate(arr);
-//      bst.populateSorted(arr); // this populates a tree divide and conquer wise or BS , used for sorted arr
+//        bst.populate(arr);
+      bst.populateSorted(arr); // this populates a tree divide and conquer wise or BS , used for sorted arr
         bst.display();
         System.out.println();
         System.out.println(bst.isBalancedTree());
