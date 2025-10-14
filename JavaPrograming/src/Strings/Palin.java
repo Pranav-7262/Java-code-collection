@@ -2,7 +2,7 @@ package Strings;
 
 public class Palin {
     public static void main(String[] args) {
-        String str="cgghh";
+        String str="markram";
         System.out.println(ispalindrone(str));
     }
     static boolean ispalindrone(String str){
@@ -10,13 +10,19 @@ public class Palin {
             return true;
         }
         str=str.toLowerCase();
-        for (int i = 0; i <=str.length()/2 ; i++) {
-            char start=str.charAt(i);
-            char end=str.charAt(str.length()-1-i);
-            if (start!=end){
-                return false;
-            }
-        }
+         int s = 0;
+         int e = str.length()-1;
+
+         while (s < e){
+             char first = str.charAt(s);
+             char last = str.charAt(e);
+
+             if(first != last) {
+                 return false;
+             }
+             s++;
+             e--;
+         }
         return true;
     }
 }

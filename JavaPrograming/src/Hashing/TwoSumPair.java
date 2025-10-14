@@ -6,7 +6,7 @@ import java.util.Set;
 public class TwoSumPair {
     public static void main(String[] args) {
    int []arr = {1, 2, 4, 3, 6};
-        System.out.println(twoSum(arr,11));
+        System.out.println(twoSum(arr,10));
     }
     public static  boolean twoSum(int arr[], int target) {
         Set<Integer>set = new HashSet<>();

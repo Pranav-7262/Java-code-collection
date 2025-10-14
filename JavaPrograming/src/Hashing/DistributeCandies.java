@@ -14,6 +14,7 @@ public class DistributeCandies {
         for (int num:candyType){
             set.add(num);
         }
+
         if (set.size() > ans){
             return ans;
         } else {
