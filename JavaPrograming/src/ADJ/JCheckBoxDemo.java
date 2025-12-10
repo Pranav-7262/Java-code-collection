@@ -7,9 +7,9 @@ public class JCheckBoxDemo {
         JFrame jf = new JFrame();
         JCheckBox c1 = new JCheckBox("C",true);
         c1.setBounds(100,50,70,30);
-        JCheckBox c2 = new JCheckBox("CPP",false);
+        JCheckBox c2 = new JCheckBox("CPP");
         c2.setBounds(100,90,70,30);
-        JCheckBox c3 = new JCheckBox("Java",true);
+        JCheckBox c3 = new JCheckBox("Java");
         c3.setBounds(100,150,70,30);
          jf.add(c1);
          jf.add(c2);
