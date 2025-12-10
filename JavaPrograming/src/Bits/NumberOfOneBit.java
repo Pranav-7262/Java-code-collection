@@ -2,7 +2,7 @@ package Bits;
 
 public class NumberOfOneBit {
     public static void main(String[] args) {
-        System.out.println(method2(13));//1101
+        System.out.println(usingBuiltMethod(13));//1101
     }
     public static int hammingWeight(int n) {
         int count = 0;
@@ -20,6 +20,9 @@ public class NumberOfOneBit {
             count++;
         }
         return count;
+    }
+    private static int usingBuiltMethod(int n) {
+        return Integer.bitCount(n);
     }
 }
 // 1010 , 10
