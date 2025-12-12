@@ -2,7 +2,7 @@ package Bits;
 
 public class DecimalToBinary {
     public static void main(String[] args) {
-        int x = 18;
+        int x = 39;
         System.out.println(convertToBinaryNew(x));
     }
     private static String convertToBinary(int x) {

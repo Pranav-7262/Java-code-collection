@@ -1,5 +1,4 @@
 package Bits;
-
 public class NumberOfOneBit {
     public static void main(String[] args) {
         System.out.println(usingBuiltMethod(13));//1101
