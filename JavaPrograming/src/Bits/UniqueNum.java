@@ -12,4 +12,8 @@ public class UniqueNum {
         }
         return uni;
     }
+
 }
+
+// x ^ x == 0
+// 0 ^ x == x
