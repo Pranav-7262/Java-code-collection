@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PowerSet {
     public static void main(String[] args) {
-    int []arr = {1,2,3};
+    int []arr = {5,1,6};
         System.out.println(countSubsets(arr));
     }
     private static List<List<Integer>> countSubsets(int []arr) {
