@@ -10,10 +10,10 @@ public class LongestNiceSubarray {
         int left = 0 , maxlen = 0 , bit = 0;
         for(int i=0;i<n;i++) {
             while((bit & nums[i]) != 0) {
-                bit = bit ^ nums[left];
+                bit = bit ^ nums[left];//removing
                 left++;
             }
-            bit = bit | nums[i];
+            bit = bit | nums[i]; // adding
             maxlen = Math.max(maxlen , i - left + 1);
         }
         return maxlen;
