@@ -1,14 +1,16 @@
 package Bits;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
-public class PowerSet {
+public class SubSetII {
     public static void main(String[] args) {
-    int []arr = {1,2,2};
+        int []arr = {1,2,2};
         System.out.println(countSubsets(arr));
     }
-    private static List<List<Integer>> countSubsets(int []arr) {
+
+    private static List<List<Integer>> countSubsets(int[] arr) {
         int n = arr.length;
         List<List<Integer>> ans = new ArrayList<>();
 
@@ -16,14 +18,14 @@ public class PowerSet {
         for (int i = 0; i < subsets; i++) {
             List<Integer> list = new ArrayList<>();
             for (int j = 0; j < n; j++) {
-                    if ((i & (1 << j)) != 0){
+                if ((i & (1 << j)) != 0) {
                         list.add(arr[j]);
-                    }
+                }
             }
-            ans.add(list);
+            if (!ans.contains(list)) {
+                ans.add(list);
+            }
         }
-        return ans;
-
+       return ans;
     }
-
 }

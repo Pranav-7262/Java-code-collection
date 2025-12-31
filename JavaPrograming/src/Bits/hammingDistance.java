@@ -2,7 +2,7 @@ package Bits;
 
 public class hammingDistance {
     public static void main(String[] args) {
-        System.out.println(hammingDistance(1,4));
+        System.out.println(hammingDistance(4,14));
     }
     public static int hammingDistance(int x, int y) {
         int xor = x ^ y;

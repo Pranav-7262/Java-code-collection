@@ -43,6 +43,8 @@ public class Operators {
         // its negative  , then apply 2s complement -->
         // first we convert 1s comp.
         // 0000 0101 // its positive num hence STOP here  ans    ---->  5
+        System.out.println(Integer.toBinaryString(54));
+        System.out.println(Long.bitCount(2324));
     }
 
 }
