@@ -1,7 +1,5 @@
 package jdbcmaster;
-
 import java.sql.*;
-
 public class UpdateEntry {
     public static void main(String[] args) throws ClassNotFoundException {
         String url = "jdbc:mysql://localhost:3306/mydatabase";
@@ -35,7 +33,6 @@ public class UpdateEntry {
         }
         catch (SQLException e){
             System.out.println(e.getMessage());
-
         }
 
     }

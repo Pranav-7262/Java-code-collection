@@ -2,7 +2,7 @@ package jdbcmaster;
 
 import java.sql.*;
 public class Test {
-    public static void main(String[] args) throws ClassNotFoundException {
+    public static void main(String[] args)  {
         String url = "jdbc:mysql://localhost:3306/mydatabase";
         String username = "root";
         String password = "pranav7262";
